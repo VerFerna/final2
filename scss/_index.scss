@@ -1,0 +1,14 @@
+/* CAROUSEL */
+
+.imgCarousel{
+    height: 300px;
+    object-fit: cov;
+}
+
+.colorBtn{
+    background-color: $color-boton;
+}
+.colorBtn:hover {
+    background-color: $color-boton-secundario;
+    color: $color-fuentes-secundario;
+}

@@ -1,0 +1,28 @@
+.navbar {
+    background-color: white;
+    color:$color-fuentes;
+    font-weight: bold;
+
+    .navbar-brand {
+        background-color:$color-fondo;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .menuNav {
+        color: $color-fuentes;
+        padding: 5px;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        li a:hover {
+            border-radius: 5px;
+            background-color:$color-fondo;
+            color: $color-fuentes-secundario;
+        }
+    }
+}

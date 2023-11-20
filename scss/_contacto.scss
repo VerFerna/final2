@@ -1,0 +1,108 @@
+.formularioContacto {
+    .content {
+        background: rgb(239, 239, 239);
+        border-radius: 5px;
+    }
+
+    .h3Contacto {
+        text-align: center;
+        font-size: 3em;
+        padding-top: 2rem;
+
+        span {
+            color: $color-fondo;
+        }
+    }
+
+    .contact-wrapper {
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+
+        >* {
+            padding: 1em;
+        }
+    }
+
+    .ulContacto {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-form {
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        form label {
+            display: block;
+        }
+
+        form p {
+            margin: 0;
+            padding: 1em;
+        }
+
+        form .block {
+            grid-column: 1 / 3;
+        }
+
+        form button {
+            width: 100%;
+            background: $color-boton;
+            border-radius: 5px;
+            text-transform: uppercase;
+            padding: 1em;
+            padding: .7em;
+            border: none;
+            outline: 0;
+
+                :hover {
+                    background-color: $color-boton-secundario;
+                    color: $color-fuentes-secundario;
+                    font-weight: bold;
+                }           
+        }
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: $color-fuentes;
+        border-bottom: 1px solid black;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-size: large;
+    }
+}
+
+/* xl */
+@media(min-width: 700px) {
+    .formularioContacto {
+        padding: 0 4em;
+        font-size: medium;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper>* {
+        padding: 2em;
+    }
+}
+
+@media(min-width:100px) {
+    .formularioContacto {
+        font-size: small;
+    }
+}

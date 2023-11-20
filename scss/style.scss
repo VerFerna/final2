@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "variables";
+@import "contacto";
+@import "fuentes";
+@import "header";
+@import "index";
+@import "productos";
+@import "variables";
+@import "carrito";
+
+section{
+    padding: 1rem;
+}

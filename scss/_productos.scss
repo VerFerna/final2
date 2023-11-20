@@ -1,0 +1,17 @@
+.card {
+    margin: 0.5rem;
+    border: none;
+    transition: all 0.5s;
+}
+
+
+.colorBtn {
+    background-color: $color-boton;
+}
+
+.colorBtn:hover {
+    background-color: $color-boton-secundario;
+    color: $color-fuentes-secundario;
+}
+
+

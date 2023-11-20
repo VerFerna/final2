@@ -1,0 +1,68 @@
+/* CARRITO */
+
+.contenedorCarrito {
+
+  margin: 2rem;
+}
+.seguirComprando {
+  display: flex;
+  border: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  gap: 1rem;
+}
+.carritoProductoImagen {
+  width: 6rem;
+  border-radius: 0.4rem;
+}
+.carritoProducto {
+  border-radius: 1rem;
+  color: black;
+}
+.carritoProducto small {
+  color: black;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.carritoProductoEliminar {
+  border: 0;
+  background-color: transparent;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.carritoAcciones {
+  display: flex;
+  justify-content: space-between;
+}
+.carritoAccionesVaciar {
+  border: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.carritoAccionesDerecha {
+  display: flex;
+}
+.carritoAccionesTotal {
+  display: flex;
+  border: 0;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-weight: bolder;
+  gap: 1rem;
+}
+.carritoAccionesComprar {
+  border: 0;
+  padding: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.desactivado{
+    display: none;
+}
