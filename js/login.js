@@ -1,5 +1,3 @@
-/********* LOGIN ************/
-
 // Función para iniciar sesión
 
 function login(event) {
@@ -22,7 +20,7 @@ function login(event) {
   }
 }
 
-// Funcion para "REGISTRATE AQUÍ"
+// Funcion para "Registrarse"
 document
   .getElementById("show-register-form")
   .addEventListener("click", function () {
@@ -44,10 +42,10 @@ function register(event) {
   if (password !== confirmPassword) {
     passwordError.textContent =
       "Las contraseñas no coinciden. Por favor, inténtalo de nuevo.";
-    return; // Detener el proceso de registro si las contraseñas no coinciden
+    return; // Detener si las contraseñas no coinciden
   }
 
-  // Continuar con el registro si las contraseñas coinciden
+  // Continuar si las contraseñas coinciden
   const users = JSON.parse(localStorage.getItem("users")) || [];
   const user = { email, password };
   users.push(user);
@@ -55,10 +53,10 @@ function register(event) {
 
   registrationSuccess.style.display = "block";
   redirectCounter.style.display = "block";
-  redirectUserToLogin(5); // Redirige al usuario después de 5 segundos
+  redirectUserToLogin(5); // Redirige al usuario
 }
 
-// Función para redirigir al usuario después de un cierto número de segundos
+// Función para redirigir al usuario
 function redirectUserToLogin(seconds) {
   const redirectCounter = document.getElementById("redirect-counter");
   let countdown = seconds;
