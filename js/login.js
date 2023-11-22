@@ -5,9 +5,7 @@ function login(event) {
 
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
-
   const users = JSON.parse(localStorage.getItem("users")) || [];
-
   const user = users.find((u) => u.email === email && u.password === password);
 
   if (user) {
@@ -75,7 +73,6 @@ function redirectUserToLogin(seconds) {
 //Cerrar Sesion//
 
 function logout() {
-  // Elimina la información de la sesión del usuario
   localStorage.removeItem("loggedInUser");
   let timerInterval;
   Swal.fire({
@@ -97,7 +94,6 @@ function logout() {
   }).then((result) => {
     
     if (result.dismiss === Swal.DismissReason.timer) {
-      // Redirige al usuario a la página de inicio de sesión u otra página deseada
       window.location.href = "login.html";
     }
   });

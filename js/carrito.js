@@ -1,6 +1,5 @@
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
-
 const contenedorCarritoVacio = document.querySelector("#carritoVacio");
 const contenedorCarritoProductos = document.querySelector("#carritoProductos");
 const contenedorCarritoAcciones = document.querySelector("#carritoAcciones");
@@ -12,16 +11,11 @@ const botonComprar = document.querySelector("#carritoAccionesComprar");
 
 function cargarProductosCarrito() {
   if (productosEnCarrito && productosEnCarrito.length > 0) {
-
-
-
     contenedorCarritoVacio.classList.add("desactivado");
     contenedorCarritoProductos.classList.remove("desactivado");
     contenedorCarritoAcciones.classList.remove("desactivado");
     contenedorCarritoComprado.classList.add("desactivado");
-
     contenedorCarritoProductos.innerHTML = "";
-
     productosEnCarrito.forEach((producto) => {
       const div = document.createElement("div");
       div.classList.add("CarritoProductos");
